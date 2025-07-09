@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# This script displays numbers from 1 to 20, with specific "bad luck" messages using a case statement.
+
+COUNT=1
+while [ "$COUNT" -le 20 ]; do
+  case "$COUNT" in
+    4)
+      echo "$COUNT"
+      echo "bad luck from China"
+      ;;
+    9)
+      echo "$COUNT"
+      echo "bad luck from Japan"
+      ;;
+    17)
+      echo "$COUNT"
+      echo "bad luck from Italy"
+      ;;
+    *) # Default case for all other numbers
+      echo "$COUNT"
+      ;;
+  esac
+  ((COUNT++))
+done
