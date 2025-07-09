@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
 # This script displays "Best School" 10 times using a for loop.
+
 for i in $(seq 1 10); do
-<<<<<<< HEAD
-# This makes 'i' used by referring to it, but doesn't change the output of 'echo'
-echo "Best School" # This line still produces "Best School"
-true "$i" # This line uses 'i' but doesn't produce visible output
-=======
   echo "Best School"
   true "$i" # This line uses 'i' to satisfy shellcheck without affecting output
->>>>>>> e2f595aaf15b930a4dbb00929f43956dc8df4c22
 done
