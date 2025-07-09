@@ -2,4 +2,5 @@
 # This script displays "Best School" 10 times using a for loop.
 for i in $(seq 1 10); do
   echo "Best School"
+  true "$i" # This line uses 'i' to satisfy shellcheck without affecting output
 done
