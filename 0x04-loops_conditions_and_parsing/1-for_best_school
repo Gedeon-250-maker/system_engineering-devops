@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # This script displays "Best School" 10 times using a for loop.
 for i in $(seq 1 10); do
-  echo "Best School"
+# This makes 'i' used by referring to it, but doesn't change the output of 'echo'
+echo "Best School" # This line still produces "Best School"
+true "$i" # This line uses 'i' but doesn't produce visible output
 done
